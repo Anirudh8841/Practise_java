@@ -32,6 +32,7 @@ class Main {
 
    public static void main(String[] args)  
    { 
+        System.out.println("Example3: Hierarchial Inheritance { B -> C1, B -> C2 } ");
         Baseclass b = new Baseclass();
         b.print_hi();
         b.print_class();

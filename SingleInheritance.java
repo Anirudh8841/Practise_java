@@ -27,6 +27,7 @@ class Childclass extends Baseclass{
 class Main { 
    public static void main(String[] args)  
    { 
+        System.out.println("Example1: Single Inheritance { B --> C } ");
         Baseclass b = new Baseclass();
         b.print_hi();
         b.print_class();

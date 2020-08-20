@@ -32,6 +32,7 @@ class childclass implements child {
 class Main { 
    public static void main(String[] args)  
    { 
+        System.out.println("Example4: Multiple Inheritance { B1, B2 -> C } ");
         childclass c = new childclass();
         c.print_base1();
         c.print_base2();

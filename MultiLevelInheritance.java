@@ -32,6 +32,7 @@ class Main {
 
    public static void main(String[] args)  
    { 
+        System.out.println("Example2: Multi Level Inheritance { B --> C1 --> C2} ");
         Baseclass b = new Baseclass();
         b.print_hi();
         b.print_class();
