@@ -4,28 +4,28 @@
 
 // Example for encapsulation 
 class Employee{
-    private String Name;
-    private int EmployeeID;
-    private int secretPin;
+    private final String name;
+    private final int employeeID;
+    private final int secretPin;
     
-    public Employee(String name, int empID, int empsecretPin){
-        Name = name;
-        EmployeeID = empID;
+    public Employee(String empname, int empID, int empsecretPin){
+        name = empname;
+        employeeID = empID;
         secretPin = empsecretPin;
     }
 
     // get methods only for required fields
     public String getName(){
-        return Name;
+        return name;
     }
     public int getEmployeeID(){
-        return EmployeeID;
+        return employeeID;
     }
-
+    
     // set methods
-    public void setsecretPin(int newsecretPin){
-        secretPin = newsecretPin;
-    }
+    // public void setsecretPin(int newsecretPin){
+    //     secretPin = newsecretPin;
+    // }
 }
 
 class Main { 
@@ -36,7 +36,7 @@ class Main {
         System.out.println("emp's name: "+emp.getName());
         System.out.println("emp's EmpID: "+emp.getEmployeeID());
         System.out.println("emp's SecretPin: Unable to access {No access method}");
-        emp.setsecretPin(200);
-        System.out.println("emp's SecretPin Successfully updated but can't view {No access}");
+        // emp.setsecretPin(200);
+        // System.out.println("emp's SecretPin Successfully updated but can't view {No access}");
    } 
 } 

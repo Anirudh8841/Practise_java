@@ -1,29 +1,29 @@
 // Example for Multilevel inheritance
 // B --> C1 --> C2
-class Baseclass{
+class BaseClass{
  
-    public void print_hi(){
-        System.out.println("Hi! from Baseclass");
+    public void printHI(){
+        System.out.println("Hi! from BaseClass");
     }
 
-    public void print_class(){
-        System.out.println("Curr - Baseclass");
-    }
-}
-
-class Childclass1 extends Baseclass{
-
-    @Override
-    public void print_class(){
-        System.out.println("Curr - Childclass1, Parent - Baseclass");
+    public void printClass(){
+        System.out.println("Curr - BaseClass");
     }
 }
 
-class Childclass2 extends Childclass1{
+class ChildClass1 extends BaseClass{
 
     @Override
-    public void print_class(){
-        System.out.println("Curr - Childclass2, Parent - Childclass1");
+    public void printClass(){
+        System.out.println("Curr - ChildClass1, Parent - BaseClass");
+    }
+}
+
+class ChildClass2 extends ChildClass1{
+
+    @Override
+    public void printClass(){
+        System.out.println("Curr - ChildClass2, Parent - ChildClass1");
     }
 } 
 
@@ -33,14 +33,14 @@ class Main {
    public static void main(String[] args)  
    { 
         System.out.println("Example2: Multi Level Inheritance { B --> C1 --> C2} ");
-        Baseclass b = new Baseclass();
-        b.print_hi();
-        b.print_class();
+        BaseClass b = new BaseClass();
+        b.printHI();
+        b.printClass();
 
-        Childclass1 c1 = new Childclass1();
-        c1.print_class();
+        ChildClass1 c1 = new ChildClass1();
+        c1.printClass();
 
-        Childclass2 c2 = new Childclass2();
-        c2.print_class();
+        ChildClass2 c2 = new ChildClass2();
+        c2.printClass();
    } 
 } 

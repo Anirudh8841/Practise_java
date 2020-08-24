@@ -1,26 +1,26 @@
 // Inheritance - mechanism by which one class allow to inherit the features of another class
 // syntax:  
-    // class derived_class extends base_class{
+    // class DerivedClass extends BaseClass{
     //     methods and fields
     // }
 // 
 
 // Example for single inheritance
 // B --> C 
-class Baseclass{
-    public void print_hi(){
-        System.out.println("Hi! from Baseclass");
+class BaseClass{
+    public void printHI(){
+        System.out.println("Hi! from BaseClass");
     }
 
-    public void print_class(){
-        System.out.println("Curr - Baseclass");
+    public void printClass(){
+        System.out.println("Curr - BaseClass");
     }
 }
 
-class Childclass extends Baseclass{
+class ChildClass extends BaseClass{
     @Override
-    public void print_class(){
-        System.out.println("Curr - Childclass, Parent - Baseclass");
+    public void printClass(){
+        System.out.println("Curr - ChildClass, Parent - BaseClass");
     }
 }
 
@@ -28,11 +28,11 @@ class Main {
    public static void main(String[] args)  
    { 
         System.out.println("Example1: Single Inheritance { B --> C } ");
-        Baseclass b = new Baseclass();
-        b.print_hi();
-        b.print_class();
-        Childclass c = new Childclass();
-        c.print_hi();
-        c.print_class();
+        BaseClass b = new BaseClass();
+        b.printHI();
+        b.printClass();
+        ChildClass c = new ChildClass();
+        c.printHI();
+        c.printClass();
    } 
 } 

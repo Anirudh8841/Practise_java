@@ -3,28 +3,28 @@
 // B1, B2 -> C
 
 interface base1{
-    public void print_base1();
-    public void print_class();
+    public void printBase1();
+    public void printClass();
 }
 
 interface base2{
-    public void print_base2();
-    public void print_class();
+    public void printBase2();
+    public void printClass();
 }
 
 interface child  extends base1,base2{
-    public void print_class();
+    public void printClass();
 }
 
-class childclass implements child {
-    public void print_base1(){
-        System.out.println("Hi!, method from Baseclass1");
+class ChildClass implements child {
+    public void printBase1(){
+        System.out.println("Hi!, method from base1");
     }
-    public void print_base2(){
-        System.out.println("Hi!, method from Baseclass2");
+    public void printBase2(){
+        System.out.println("Hi!, method from base2");
     }
     @Override
-    public void print_class(){
+    public void printClass(){
         System.out.println("Curr - Child, Parent:  base1 and base2");
     }
 }
@@ -33,9 +33,9 @@ class Main {
    public static void main(String[] args)  
    { 
         System.out.println("Example4: Multiple Inheritance { B1, B2 -> C } ");
-        childclass c = new childclass();
-        c.print_base1();
-        c.print_base2();
-        c.print_class();
+        ChildClass c = new ChildClass();
+        c.printBase1();
+        c.printBase2();
+        c.printClass();
    } 
 } 
