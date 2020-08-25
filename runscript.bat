@@ -8,4 +8,10 @@ javac MultipleInheritance.java
 java Main
 javac Encapsulation.java
 java Main
+javac Abstraction.java
+java Main
+javac RunTImePolymorphism.java
+java Main
+javac CompileTImePolymorphism.java
+java Main
 Pause

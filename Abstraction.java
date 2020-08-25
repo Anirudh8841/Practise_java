@@ -51,6 +51,7 @@ class Manager extends Employee{
 
 class Main{
     public static void main(String[] args){
+        System.out.println("Example6: Abstraction");
         Employee e1 = new Manager("sam",1,1.0,100.00);
         Employee e2 = new Manager("ani",2,1.2,200.00);
         e1.printEmployee();
