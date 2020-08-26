@@ -10,8 +10,10 @@ javac Encapsulation.java
 java Main
 javac Abstraction.java
 java Main
-javac RunTImePolymorphism.java
+javac RunTimePolymorphism.java
 java Main
-javac CompileTImePolymorphism.java
+javac CompileTimePolymorphism.java
+java Main
+javac thisRef.java
 java Main
 Pause
