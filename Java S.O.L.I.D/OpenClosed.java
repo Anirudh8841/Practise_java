@@ -1,12 +1,7 @@
 // a class/functions/modules should remain closed for modification but should have the option for extension
-// 
-
 // below is an example for calculating areas of various shapes 
-// Lets say for now rectangle area is sufficent 
-
 
 // Without OCP
-
 class Rectangle{
     final double length;
     final double breadth;
@@ -60,13 +55,13 @@ class CircleOCP implements Shape{
 }
 // now if we want to add area for a new shape then we can simply add a class implementing shape
 
+
 class Main{
     public static void main(String[] args){
         Rectangle r = new Rectangle(2,3);
         RectangleOCP rOCP = new RectangleOCP(2,3); 
         Circle c = new Circle(7);
         CircleOCP cOCP = new CircleOCP(7);
-        
         System.out.println("OCP - can add new shapes without modifying the CaclulateArea class");
     }
 }
