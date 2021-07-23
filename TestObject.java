@@ -50,9 +50,11 @@ class Main{
         
         System.out.println(printString);
 
+        // new line for reset2
+
         // adding to test reset this line
         // adding this new line 
-        
+
         // if (first == first) {
         //     System.out.println("== working fine");
         // }
